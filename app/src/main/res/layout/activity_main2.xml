@@ -2,69 +2,71 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/wellnesscentre"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="43dp" />
+    android:background="@drawable/android_gradient_3"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button1"
-        android:text="beauty"
-        android:textStyle="italic"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="212dp" />
+        android:layout_width="179dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="MEDICAL"
+        android:textSize="30dp"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button1"
-        android:text="yoga"
-        android:textStyle="italic"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="591dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="175dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="YOGA"
+        android:textSize="30dp"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="BEAUTY"
+        android:textSize="30dp"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button1"
-        android:text="medical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="51dp"
+        android:text="CHOOSE ONE CATEGORY"
+        android:textColor="@color/white"
+        android:textSize="45dp"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="269dp"
-        tools:layout_editor_absoluteY="212dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button1"
-        android:text="meditation"
-        android:textStyle="italic"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="591dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="404dp"
-        android:layout_height="168dp"
-        app:srcCompat="@drawable/grinding"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="0dp" />
-
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
