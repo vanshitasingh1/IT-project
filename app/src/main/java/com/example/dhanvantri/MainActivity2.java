@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class MainActivity1 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
-    String TAG ="MainActivity1" ;
+    String TAG ="MainActivity2" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
