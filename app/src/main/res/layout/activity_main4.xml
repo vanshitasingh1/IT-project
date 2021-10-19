@@ -5,9 +5,9 @@
     android:id="@+id/button_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imagexml4"
-    tools:context=".MainActivity"
-    >
+    android:background="@drawable/kuchbhi"
+    tools:context=".MainActivity" >
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
